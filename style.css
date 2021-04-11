@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #4a2442;
+  --complimentary-color: #000;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: #7b238b;
+  text-decoration: none;
+}
+a:hover {
+  color: #e2c4dd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  padding-top: 75px;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: lighter;
+  padding-top: 40px;
+}
+
+.navbar {
+  background-color: #4a2442 !important;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.espanol {
+  color: rgb(129, 98, 134);
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 30px;
+  border: 1px solid rgb(129, 98, 134);
+  border-radius: 5px;
+}
+
+.espanol:hover {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+#logo {
+  height: 150px;
+  width: auto;
+}
+
+.line {
+  line-height: 100px;
+}
+
+.profile-image {
+  width: 400px;
+}
+
+.home {
+  height: 900px;
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  background-color: var(--complimentary-color);
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home h1 {
+  font-size: 150px;
+  color: var(--primary-color);
+  transform: translateY(-600px);
+  animation: 1.2s slideIn ease-in-out forwards 1s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+.home h1::before {
+  content: "";
+  width: 0%;
+  height: 76px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: -10px;
+  animation: 1s underline ease-in-out forwards 2s;
+  mix-blend-mode: screen;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  background: url(images/yonkers.jpg) no-repeat center center fixed;
+  transform: scale(0.5);
+  animation: 0.5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
+}
+
+@keyframes skewBg {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes underline {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/*About*/
+.about {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: url(images/background.jpeg) no-repeat center center fixed;
+  color: #ffffff;
+}
+
+.about h1 {
+  font-size: 48px;
+}
+
+.about p {
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-text {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/*Individual Profile Pages */
+
+.profile {
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+
+.description {
+  margin-top: 70px;
+}
+
+/* practice areas */
+
+.practice {
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+.practice .card-link {
+  color: #4a2442 !important;
+}
+
+.practice .row {
+  text-align: center;
+}
+
+.practice h1 {
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+.practice h5 {
+  padding-top: 40px;
+}
+.practice p {
+  padding-bottom: 30px;
+}
+
+/* profiles */
+.profiles {
+  background: url(images/background.jpeg) no-repeat center center fixed;
+  padding-top: 8%;
+  padding-bottom: 10%;
+  color: white;
+}
+
+.profiles h1 {
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+
+.snip1482 {
+  position: relative;
+  min-width: 230px;
+  max-width: 295px;
+  min-height: 220px;
+  width: 100%;
+  text-align: right;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.snip1482 figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 10px;
+}
+
+.snip1482 p {
+  font-size: 0.8em;
+}
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* testimonials */
+.demo {
+  padding-top: 10%;
+  padding-bottom: 8%;
+}
+.demo h2 {
+  padding-top: 50px;
+  text-align: center;
+  color: #4a2442;
+}
+.testimonial {
+  margin: 50px 30px 30px 30px;
+  text-align: center;
+  position: relative;
+}
+.testimonial .description {
+  padding: 30px;
+  margin-bottom: 80px;
+  border-left: 1px solid #4a2442;
+  font-size: 15px;
+  /* color: #fff; */
+  line-height: 33px;
+  position: relative;
+}
+.testimonial .description:before,
+.testimonial .description:after {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background: #4a2442;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.testimonial .description:after {
+  top: auto;
+  bottom: 0;
+}
+.testimonial .title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4a2442;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  position: relative;
+}
+.testimonial:before,
+.testimonial .title:before {
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #4a2442;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+.testimonial .title:before {
+  top: -80px;
+}
+.testimonial .pic {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+.owl-theme .owl-controls {
+  margin-top: 0;
+}
+.owl-theme .owl-controls .owl-page span {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  background: #000;
+  outline: 2px solid #000;
+  outline-offset: 2px;
+  margin-right: 8px;
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span {
+  background: #4a2442;
+}
+
+/* faq */
+
+.faq h1 {
+  padding-bottom: 30px;
+}
+
+.faq h5 {
+  padding-top: 30px;
+}
+
+.faq footer {
+  margin-top: 50px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #4a2442;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+/* partners */
+.partners footer {
+  margin-top: 80px;
+}
+
+.blog footer{
+   margin-top:50px;
+}
+
+.blog h1 {
+  padding-bottom: 30px;
+}
