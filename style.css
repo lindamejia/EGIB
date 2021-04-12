@@ -97,7 +97,9 @@ footer {
 }
 
 .home h1::before {
-  content: "";
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
   width: 0%;
   height: 76px;
   background-color: var(--secondary-color);
@@ -105,6 +107,7 @@ footer {
   bottom: -10px;
   animation: 1s underline ease-in-out forwards 2s;
   mix-blend-mode: screen;
+  content: "New York Family Law";
 }
 
 .overlay {
