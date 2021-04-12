@@ -33,7 +33,7 @@ footer {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-size: 20px;
+  font-size: 14px;
   padding-left: 20px;
   font-weight: lighter;
   padding-top: 40px;
@@ -115,7 +115,7 @@ footer {
   opacity: 0;
   left: 0;
   right: 0;
-  background: url(images/yonkers.jpg) no-repeat center center fixed;
+  background: url(images/newyork.jpeg) no-repeat center center fixed;
   transform: scale(0.5);
   animation: 0.5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
 }
@@ -195,12 +195,21 @@ footer {
   font-size: 48px;
   padding-bottom: 30px;
 }
-.practice h5 {
+
+.practice-subtitle{
+  color:var(--secondary-color);
+  padding-top:50px;
+  text-align: center;
+  /* margin-left:50%
+  margin-right: */
+}
+
+/* .practice h5 {
   padding-top: 40px;
-}
-.practice p {
+} */
+/* .practice p {
   padding-bottom: 30px;
-}
+} */
 
 /* profiles */
 .profiles {
@@ -394,10 +403,25 @@ footer {
   margin-top: 80px;
 }
 
-.blog footer{
-   margin-top:50px;
+.blog footer {
+  margin-top: 50px;
 }
 
 .blog h1 {
   padding-bottom: 30px;
+}
+
+.certifications {
+  background: url(images/background.jpeg) no-repeat center center fixed;
+  padding-top: 100px ;
+  padding-bottom: 100px;
+  color: white;
+
+}
+
+.certs-text{
+  text-align: center;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
